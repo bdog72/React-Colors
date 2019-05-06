@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
 .Navbar {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   height: 6vh;
 }
-
 .logo {
   margin-right: 15px;
   padding: 0 13px;
@@ -32,11 +29,9 @@
 .rc-slider-track {
   background-color: transparent;
 }
-
 .rc-slider-rail {
   height: 8px;
 }
-
 .rc-slider-handle,
 .rc-slider-handle:active,
 .rc-slider-handle:focus,
