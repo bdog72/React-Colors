@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
-import PaletteFooter from "./PaletteFooter";
-import ColorBox from "./ColorBox";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
+import PaletteFooter from './PaletteFooter';
+import ColorBox from './ColorBox';
 
 class SingleColorPalette extends Component {
   constructor(props) {
     super(props);
     this._shades = this.gatherShades(this.props.palette, this.props.colorId);
-    this.state = { format: "hex" };
+    this.state = { format: 'hex' };
     this.changeFormat = this.changeFormat.bind(this);
   }
   gatherShades(palette, colorToFilterBy) {
@@ -37,12 +37,12 @@ class SingleColorPalette extends Component {
       />
     ));
     return (
-      <div className='SingleColorPalette Palette'>
+      <div className="SingleColorPalette Palette">
         <Navbar handleChange={this.changeFormat} showingAllColors={false} />
-        <div className='Palette-colors'>
+        <div className="Palette-colors">
           {colorBoxes}
-          <div className='go-back ColorBox'>
-            <Link to={`/palette/${id}`} className='back-button'>
+          <div className="go-back ColorBox">
+            <Link to={`/palette/${id}`} className="back-button">
               GO BACK
             </Link>
           </div>
